@@ -12,7 +12,6 @@ app.use((req, res, next) => {
 
 app.use("/user", (req, res, next) => {
   res.show("forbidden.html");
-  next();
 });
 
 app.use(express.static(path.join(__dirname, "/public")));
